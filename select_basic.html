@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selector Basic</title>
+	<meta charset="utf-8" />
+	<style>
+		/*  전체 선택자 * : 브라우저가 갖고 있는 기본 스타일 초기화
+		*{ 
+			margin:0;
+			padding:0;
+		}
+		*/
+		/* Type 선택자 : 태그를 기준으로 스타일 초기화 */
+		h1{
+			color:green;
+		}
+		p{
+			color:blue;
+			text-align:center;
+		}
+		/* .class 선택자 : class명으로 해당 요소 선택 */
+		.red--text{
+			color:red;
+		}
+		/* #id 선택자 : id로 지정 */
+		#title{
+			font-size: 40px;
+			color : darkslategray;
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+<h1 id="title">몽환군단장 아브렐슈드의 예언</h1>
+<hr/>
+<p>
+혼돈의 기둥이 질서를 꿰뚫고 태초의 손길이 태양을 빚어내면 빛의 의지는 심연으로 굴복할지어다.<br>
+운명의 궤적이 돌고 돌아 만물이 혼돈으로 회귀하는 날. 모든것이 새롭게 시작되리라.<br>
+빛과 어둠은 다시 혼돈으로 돌아가 질서를 바로 세울 주인을 정하리라.<br>
+순리가 무너져 역리가 되고 역리는 순리가 되어 바로 서리라.<br>
+<span class="red--text">심연의 군주</span>가 돌아오리라.
+</p>
+</body>
+</html>

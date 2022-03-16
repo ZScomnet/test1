@@ -1,0 +1,24 @@
+/*
+
+*/
+h1{
+	color: blue;
+}
+.article{
+	border: 1px;
+	background-color: black;
+	color: white;
+}
+.text_blue{
+			color: blue;
+}
+.text_green{
+	color:green;
+}
+.text-decoration-none{
+	text-decoration: none;
+}
+.dark{
+	background-color: black;
+	color:white;
+}

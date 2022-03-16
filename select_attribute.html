@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selector Attribute</title>
+	<style type="text/css">
+		h2[class]{
+			font-size: 50px;
+		}
+
+		/* target을 갖고있는 요소 */
+		[target]{
+			color:green;
+		}
+
+		/* 속성 값과 일치하는 요소 */
+		h2[class="naver-title"]{
+			color:green;
+		}
+
+		/* 속성 값을 포함하는 요소 */
+		a[href*="www"]{
+			text-decoration: none;
+		}
+		/* 속성 값으로 시작하는 요소*/
+		h2[class^="google"]{
+			color:blue;
+		}
+		/* 속성 값으로 끝나는 요소 */
+		a[href$="facebook.com"]{
+			color:red;
+		}
+
+		/* 속성에 단어가 포함하는 요소 */
+		h2[class~="title"]{
+			color:blue;
+			font-weight:300;
+		}
+		 input[type="checkbox"] {
+	        -webkit-appearance: none;
+	        position: relative;
+	        width: 16px;
+	        height: 16px;
+	        cursor: pointer;
+	        outline: none !important;
+	        border: 1px solid #eeeeee;
+	        border-radius: 2px;
+	        background: #fbfbfb;
+	    }
+	 
+/*	    input[type="checkbox"]::before {
+	        content: "\2713";
+	        position: absolute;
+	        top: 50%;
+	        left: 50%;
+	        overflow: hidden;
+	        transform: scale(0) translate(-50%, -50%);
+	        line-height: 1;
+	    }
+	 
+	    input[type="checkbox"]:hover {
+	        border-color: rgba(170, 170, 170, 0.5);
+	    }
+	 */
+	    input[type="checkbox"]:checked {
+	        background-color: #ff8955;
+	        border-color: rgba(255, 255, 255, 0.3);
+	        color: white;
+	    }
+	 
+/*	    input[type="checkbox"]:checked::before {
+	        border-radius: 2px;
+	        transform: scale(1) translate(-50%, -50%)
+	    }*/
+			}
+	</style>
+</head>
+<body>
+	<h2 class="naver-title"> Naver </h2>
+	<a href="http://www.naver.com"> NAVER </a>
+	<h2 class="google-title"> Google </h2>
+	<a href="http://google.com" target="_blank"> GOOGLE </a>
+	<h2 class="facebook-title"> Facebook</h2>
+	<a href="http://facebook.com"> FACEBOOK </a>
+	<h2 class="text title random"> RANDOM </h2>
+	<input type="checkbox" /> Check
+</body>
+</html>
